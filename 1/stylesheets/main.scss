@@ -1,7 +1,6 @@
 //Google fonts: Open Sans
-@import bourbon/bourbon
+@import 'bourbon/bourbon';
 
-@import "web-fonts";
 @include web-font((Open Sans));
 
 //styles
