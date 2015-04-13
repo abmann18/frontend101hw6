@@ -1,21 +1,20 @@
 //defining the function showTheTotal
 
 function showTheTotal(){
-	var value1 = ".value1";
-	var value2 = ".value2";
-	var value3 = ".value3";
-	var allValues = (value1 * value2 * value3); 
+	var value1 = $(".value1 input").val();
+	var value2 = $(".value2 input").val();
+	var value3 = $(".value3 input").val();
+	var allValues = value1 * value2 * value3; 
 
-	$(".total").click(function(){
-		$(".showingTotal").show();
-			$(".totalAmount").val(allValues);
+	$(".showingTotal").onclick(function(){
+		(".totalAmount").show();
 	});
-
 }
 
 
 //invoking the function showTheTotal
 
-$(function(){
-	showTheTotal();
+$(document).ready(function(){
+	showTheTotal()
 });
+
