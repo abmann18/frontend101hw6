@@ -36,21 +36,51 @@ input{
 	width: 100px;
 	height: 44px;
 	border-radius: 4px;
-	border: 1px solid #2ea0dd;
 	float: left;
 }
 .btn1 p, .btn2 p, .btn3 p{
-	margin: 10px 0 10px 25px;
+	margin: 10px 0 10px 15px;
 	color: #2ea0dd;
 }
 .btn1:hover, .btn2:hover, .btn3:hover{
-	background-color: #2ea0dd;
+	font-weight: 600;
 }
 .btn1:hover p, .btn2:hover p, .btn3:hover p{
-	color: #fff;
+	font-weight: 600;
+	text-decoration: underline;
 }
 .textfield2, .textfield3{
 	clear: both;
+}
+.total{
+	clear: both;
+	float: left;
+}
+.viewTotal{
+	margin: 15px 0 0 0;
+	width: 100px;
+	height: 44px;
+	border-radius: 4px;
+	clear: both;
+	border: 1px solid #2ea0dd;
+}
+.viewTotal p{
+	color: #2ea0dd;
+	margin: 10px 0 0 12px;
+	float: left;
+}
+.viewTotal:hover{
+	background-color: #2ea0dd;
+}
+.viewTotal:hover p{
+	color: #fff;
+}
+.showingTotal{
+	float: left;
+	margin: -5px 0 0 15px;
+}
+.totalAmount{
+	display: none;
 }
 
 /*Placeholder styling*/

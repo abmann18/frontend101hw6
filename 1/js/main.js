@@ -1,20 +1,21 @@
-$(document).ready(function(){
-	$(window).load(function(){
+//defining the function showTheTotal
 
-		$("input").keyup(multiplyInputs);
-  			function multiplyInputs() {
-       			var multiply = 0;
+function showTheTotal(){
+	var value1 = ".value1";
+	var value2 = ".value2";
+	var value3 = ".value3";
+	var allValues = (value1 * value2 * value3); 
 
-       	$("input").each(function () {           
-        	var $textfield1 = $('.value1', this).val();
-         	var $textfield2 = $('.value2', this).val();
-        	var $textfield3 = $('.value3', $(this).next()).val();
-
-        	var $total = $value1 * $value2 * $value3;
-
-	     	});
-
-       $("#grandTotal").text(multiplyInputs);
-   }
+	$(".total").click(function(){
+		$(".showingTotal").show();
+			$(".totalAmount").val(allValues);
 	});
+
+}
+
+
+//invoking the function showTheTotal
+
+$(function(){
+	showTheTotal();
 });
